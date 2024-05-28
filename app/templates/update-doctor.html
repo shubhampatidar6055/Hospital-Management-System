@@ -81,32 +81,32 @@
             <form action="/update_doctor_data/" method="POST" enctype="multipart/form-data">
               {% csrf_token %}
               <input type="hidden" value="{{doctor_obj.id}}" name="uid" >
-              <div>w
-                <input type="text" placeholder="Full Name" name="name" />
+              <div>
+                <input type="text" placeholder="Full Name" name="name" value="{{doctor_obj.name}}" />
               </div>
               <div>
-                <input type="email" placeholder="Email" name="email" />
+                <input type="email" placeholder="Email" name="email" value="{{doctor_obj.email}}" />
               </div>
               <div>
-                <input type="text" placeholder="Phone Number" name="mobile_no" />
+                <input type="text" placeholder="Phone Number" name="mobile_no" value="{{doctor_obj.mobile_no}}" />
               </div>
               <div>
-                <input type="text" placeholder="Gender" name="gender" />
+                <input type="text" placeholder="Gender" name="gender" value="{{doctor_obj.gender}}" />
               </div>
               <div>
-                <input type="date" placeholder="DOB" class="text-success" name="dob" />
+                <input type="date" placeholder="DOB" class="text-success" name="dob" value="{{doctor_obj.dob}}" />
               </div>
               <div>
-                <input type="text" placeholder="Address" name="address" />
+                <input type="text" placeholder="Address" name="address" value="{{doctor_obj.address}}" />
               </div>
               <div>
-                <input type="text" placeholder="Degree" name="degree" />
+                <input type="text" placeholder="Degree" name="degree" value="{{doctor_obj.degree}}" />
               </div>
               <div>
-                <input type="text" placeholder="Experience" name="experience" />
+                <input type="text" placeholder="Experience" name="experience" value="{{doctor_obj.experience}}" />
               </div>
               <div>
-                <input type="text" placeholder="Specialization" name="Specialization" />
+                <input type="text" placeholder="Specialization" name="Specialization" value="{{doctor_obj.Specialization}}" />
               </div>
               <div>
                 <input type="file" placeholder="Upload image" class="text-success" name="image" />
